@@ -1,0 +1,247 @@
+
+.page{
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    min-width: 1100px;
+    max-width: 1600px;
+  }
+  
+  .header{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color:#f2f2f2;
+    overflow: hidden;
+  
+  }
+  .logo{
+    margin: 0 auto;
+    padding: 0;
+    width:143px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+  }
+  .logo_place_header{
+    background-image: url(images/logo_place_header.png);
+    position: absolute;
+    z-index:1;
+    left:64px;
+    top: 30px;
+  
+  }
+  
+  
+  
+  
+  
+  .header__title{
+    font-size: 102px;
+    font-weight:600;
+    z-index: 1;
+    width: 730px;
+    margin: 0;
+    position: relative;
+    margin-left: 64px;
+  }
+  
+  .header__square-pic{
+    position: absolute;
+    right: 0;
+    top: 64px;
+    background: #2F80ED;
+    width:568px;
+    height: 568px;
+  }
+  
+  .header__subtitle{
+    position: absolute;
+    font-size: 18px;
+    width:388px;
+    margin: 0 auto;
+    padding: 0;
+    bottom: 30px;
+    left: 64px;
+    z-index: 1;
+  }
+  
+  .header__link{
+    text-decoration: none;
+    font-size: 18px;
+    color: #2F80ED ;
+  }
+  
+  .header__main-illustration{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width:957px ;
+    min-width: 913px;
+    min-height: 756px;
+    max-height: 800px;
+  }
+  
+  .rotation{
+  animation: rotation 20s linear infinite;
+  
+  }
+  @keyframes rotation{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .two-columns{
+    display: flex;
+    width: 80%;
+    background: white;
+    padding: 100px 10%;
+  }
+  
+  .two-columns__brief{
+    color: #2F80ED;
+    width: 175px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+  
+  .two-columns__main-text{
+    width: 60%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .two-columns__span-accent{
+    font-weight: 600;
+  }
+  
+  .two-columns__paragraph{
+    font-size: 24px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    line-height: 34px;
+  }
+  
+  .oakley{
+    background: #f2f2f2;
+  }
+  
+  .kaufman{
+    width:100% ;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    background: #1F1F1F;
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0;
+  }
+  
+  .section-title{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.15;
+    width: 60%;
+    z-index: 2;
+  }
+  
+  .section-subtitle{
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 80px;
+    z-index: 2;
+  }
+  
+  .table{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 80px;
+    column-gap: 20px;
+    width: 70%;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .table__cell{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .table__text{
+    text-align: start;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0;
+  }
+  
+  .table__heading{
+    font-size: 24px;
+    line-height: 1.15;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .kaufman__triangle{
+    position:absolute;
+    right: 0;
+    top: -25px;
+    transform: rotate(30deg);
+  }
+  
+  .footer{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background-color:#1F1F1F;
+    box-sizing: border-box;
+    padding:  60px 10% 40px ;
+  }
+  
+  
+  .footer__content{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  
+  }
+  
+  
+  .logo_place_footer{
+    background-image: url(images/logo_place_footer.png);
+    margin: 0;
+  
+  }
+  
+  .footer__author{
+    color: white;
+    margin: 0 ;
+  }
+  
+  
