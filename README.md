@@ -32,12 +32,14 @@ To view the website locally on your computer or make modifications to the projec
 1. Clone the repository to your local machine using the following command:
 
 ```
-git clone https://github.com/your-username/learning-how-to-learn.git
+git clone https://github.com/PlatonTod/Learning-how-to-learn-sprint2
 ```
 
 2. Navigate to the project directory:
 
-```cd learning-how-to-learn```
+```
+cd learning-how-to-learn-sprint2
+```
 
 3. Open the `index.html` file in your preferred web browser to access the website.
 
@@ -49,13 +51,17 @@ Contributions to the Learning How to Learn project are always welcome! If you ha
 
 2. Create a new branch from the `main` branch with a descriptive name for your changes:
 
-```git checkout -b feature/new-feature```
+```
+git checkout -b feature/new-feature
+```
 
 3. Make your modifications and commit the changes with clear commit messages.
 
 4. Push the changes to your forked repository:
 
-```git push origin feature/new-feature```
+```
+git push origin feature/new-feature
+```
 
 5. Create a Pull Request (PR) from your branch to the main repository. Provide a detailed description of your changes and their purpose.
 
