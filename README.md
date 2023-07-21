@@ -31,7 +31,9 @@ To view the website locally on your computer or make modifications to the projec
 
 1. Clone the repository to your local machine using the following command:
 
-```git clone https://github.com/your-username/learning-how-to-learn.git```
+```
+git clone https://github.com/your-username/learning-how-to-learn.git
+```
 
 2. Navigate to the project directory:
 
