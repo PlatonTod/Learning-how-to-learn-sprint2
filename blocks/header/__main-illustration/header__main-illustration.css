@@ -1,0 +1,9 @@
+.header__main-illustration{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width:957px ;
+    min-width: 913px;
+    min-height: 756px;
+    max-height: 800px;
+  }

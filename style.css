@@ -1,365 +1,42 @@
-
-.page{
-    margin: 0 auto;
-    width: 100%;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    min-width: 1100px;
-    max-width: 1600px;
-  }
-  
-  .header{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background-color:#f2f2f2;
-    overflow: hidden;
-  
-  }
-  .logo{
-    margin: 0 auto;
-    padding: 0;
-    width:143px;
-    height: 32px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  
-  }
-  .logo_place_header{
-    background-image: url(images/logo_place_header.png);
-    position: absolute;
-    z-index:1;
-    left:64px;
-    top: 30px;
-  
-  }
-  
-  .header__title{
-    font-size: 102px;
-    font-weight:600;
-    z-index: 1;
-    width: 730px;
-    margin: 0;
-    position: relative;
-    margin-left: 64px;
-  }
-  
-  .header__square-pic{
-    position: absolute;
-    right: 0;
-    top: 64px;
-    background: #2F80ED;
-    width:568px;
-    height: 568px;
-  }
-  
-  .header__subtitle{
-    position: absolute;
-    font-size: 18px;
-    width:388px;
-    margin: 0 auto;
-    padding: 0;
-    bottom: 30px;
-    left: 64px;
-    z-index: 1;
-  }
-  
-  .header__link{
-    text-decoration: none;
-    font-size: 18px;
-    color: #2F80ED ;
-  }
-  
-  .header__main-illustration{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width:957px ;
-    min-width: 913px;
-    min-height: 756px;
-    max-height: 800px;
-  }
-  
-  .rotation{
-  animation: rotation 20s linear infinite;
-  
-  }
-  @keyframes rotation{
-    from{
-      transform: rotate(0deg);
-    }
-    to{
-      transform: rotate(360deg);
-    }
-  }
-  
-  
-  .content{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .two-columns{
-    display: flex;
-    width: 80%;
-    background: white;
-    padding: 100px 10%;
-  }
-  
-  .two-columns__brief{
-    color: #2F80ED;
-    width: 175px;
-    margin: 0 auto;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 1.2;
-  }
-  
-  .two-columns__main-text{
-    width: 60%;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  
-  .two-columns__span-accent{
-    font-weight: 600;
-  }
-  
-  .two-columns__paragraph{
-    font-size: 24px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    line-height: 34px;
-  }
-  
-  .oakley{
-    background: #f2f2f2;
-  }
-  
-  .kaufman{
-    width:100% ;
-    display: flex;
-    color: white;
-    align-items: center;
-    flex-direction: column;
-    background: #1F1F1F;
-    position: relative;
-    overflow: hidden;
-    padding: 90px 0;
-  }
-  
-  .section-title{
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    line-height: 1.15;
-    width: 100%;
-    z-index: 2;
-  }
-  
-  .section-subtitle{
-    font-size: 24px;
-    line-height: 34px;
-    margin-bottom: 80px;
-    text-align: center;
-    z-index: 2;
-  }
-  
-  .table{
-    display:grid;
-    grid-template-columns:repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 80px;
-    column-gap: 20px;
-    width: 70%;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .table__cell{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .table__text{
-    text-align: start;
-    font-size: 20px;
-    line-height: 1.2;
-    margin: 0;
-  }
-  
-  .table__heading{
-    font-size: 24px;
-    line-height: 1.15;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  
-  .kaufman__triangle{
-    position:absolute;
-    right: 0;
-    top: -25px;
-    transform: rotate(30deg);
-  }
-  
-  .footer{
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    background-color:#1F1F1F;
-    box-sizing: border-box;
-    padding:  60px 10% 40px ;
-  }
-  
-  
-  .footer__content{
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-  
-  }
-  
-  
-  .logo_place_footer{
-    background-image: url(images/logo_place_footer.png);
-    margin: 0;
-  
-  }
-  
-  .footer__author{
-    color: white;
-    margin: 0 ;
-  }
-  
-  .feynman{
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 790px;
-    width: 100%;
-    background-image: url("images/feynman.png");
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: 867px 637px;
-  }
-
-  .feynman__title{
-    line-height: 1.15;
-    font-size: 100px;
-    font-weight: 600;
-    width: 775px;
-    text-align: center;
-    padding-top: 100px;
-    margin: 0 auto;
-  }
-
-  .feynman__subtitle{
-    Line-height: 51px;
-    font-size: 36px;
-    font-weight: normal;
-    padding-top: 70px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .feynman__link{
-    position:absolute ;
-    right: 48px;
-    top: 50%;
-    Line-height:51px;
-    font-size:36px;
-    font-weight:normal;
-  }
-
-  .techniques{
-    margin: 0 auto;
-    padding: 0;
-    width: 80%;
-    padding: 100px 10%;
-  }
-
-  .cards{
-    margin: 0 auto;
-    padding: 0;
-    width: 920px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 100px;
-  }
-  
-  .cards__item{
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    padding-top:60px;
-  }
-  
-  .cards__image{
-    margin: 0 auto;
-    padding: 0;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-  }
-  
-  .cards__title{
-    margin: 0 auto;
-    padding: 0;
-    line-height: 1.15;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 43px;
-    text-align: center;
-  }
-  
-  .cards__description{
-    margin: 0 auto;
-    padding: 0;
-    margin-top: 16px;
-    line-height: 23px;
-    font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-  }
-
-  .resources{
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    padding: 100px 0 217px;
-    background-color: #fff;
-  }
-  
-  .resources__logo-zone{
-    margin: 0 auto;
-    padding: 0;
-    width: 1100px;
-    display: flex;
-    margin-top: 80px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .resources__logo{
-    margin: 0 auto;
-    padding: 0;
-    width:270px ;
-    height: 38px;
-  }
-  
-  .resources__logo:hover{
-    opacity: .7;
-    transition: opacity .3s ease;
-  }
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\cards\\cards.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\cards\\__description\\cards__description.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\cards\\__image\\cards__image.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\cards\\__item\\cards__item.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\cards\\__title\\cards__title.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\content\\content.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\feynman\\feynman.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\feynman\\__link\\feynman__link.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\feynman\\__subtitle\\feynman__subtitle.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\feynman\\__title\\feynman__title.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\footer\\footer.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\footer\\__author\\footer__author.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\footer\\__content\\footer__content.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\header\\header.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\header\\__link\\header__link.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\header\\__main-illustration\\header__main-illustration.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\header\\__square-pic\\header__square-pic.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\header\\__subtitle\\header__subtitle.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\header\\__title\\header__title.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\kaufman\\kaufman.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\kaufman\\__triangle\\kaufman__triangle.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\logo\\logo.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\logo\\_place\\logo_place_footer.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\logo\\_place\\logo_place_header.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\oakley\\oakley.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\page\\page.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\resources\\resources.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\resources\\__logo\\resources__logo.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\resources\\__logo-zone\\resources__logo-zone.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\rotation\\rotation.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\section-subtitle\\section-subtitle.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\section-title\\section-title.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\table\\table.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\table\\__cell\\table__cell.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\table\\__heading\\table__heading.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\table\\__text\\table__text.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\techniques\\techniques.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\two-columns\\two-columns.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\two-columns\\__brief\\two-columns__brief.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\two-columns\\__main-text\\two-columns__main-text.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\two-columns\\__paragraph\\two-columns__paragraph.css');
+@import url('C:\\Users\\tohat\\OneDrive\\Рабочий стол\\Sprint2\\blocks\\two-columns\\__span-accent\\two-columns__span-accent.css');
